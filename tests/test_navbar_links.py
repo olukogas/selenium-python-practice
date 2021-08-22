@@ -14,5 +14,4 @@ def test_navbar_links(driver):
         homepage.load()
         homepage.select_category(category_name)
         category_title = driver.find_element(*main_category.CATEGORY_TITLE)
-        assert category_title.is_displayed()
         assert category_title.text.upper() == category_name
